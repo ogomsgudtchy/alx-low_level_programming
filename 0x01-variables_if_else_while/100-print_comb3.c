@@ -12,7 +12,6 @@ int main(void)
 	if (i / 10 < i % 10)
 	if (i < 89)
 	{
-	
 		putchar(44);
 		putchar(32);
 	}
