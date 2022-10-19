@@ -1,3 +1,5 @@
+#ifndef
+#define MAIN_H
 #include "main.h"
 #include <stdio.h>
 /**
