@@ -2,11 +2,16 @@
 #include <stdio.h>
 /**
  * print_times_table - prints nxn times table
+ *
  * @n: maximum multiple of times table
+ *
  * Description: This will print a times table formed by nxn multiplications
+ *
  * for n = 0 - 15
+ *
  * Return: Always return n
  */
+
 void print_times_table(int n)
 {
 	int a, b, c;
@@ -15,25 +20,36 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			_putchar(48);
-		}
 		for (b = 1; b <= n; b++)
 		{
-			c = a * b;
-				_putchar(44);
-				_putchar(32);
-			if (c <= 9)
-				_putchar(32);
-				_putchar(32);
-				_putchar(c + 48);
-			else if (c <= 99)
-				_putchar(32);
-				_putchar((c / 10) + 48);
-				_putchar((c % 10) + 48);
-			else
-				_putchar(((c / 100) % 10) + 48);
-				_putchar(((c / 10) % 10) + 48);
-				_putchar((c % 10) + 48);
+		c = (a * b);
+		if (b != 0)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+		if (c < 10 && b != 0)
+		{
+			_putchar(' ');
+			_putchar(' ');
+			_putchar((c % 10) + '0');
+		}
+		else if (c >= 10 && c < 100)
+		{
+			_putchar(' ');
+			_putchar((c / 10) + '0');
+			_putchar((c % 10) + '0');
+		}
+		else if (prod >= 100 && x != 0)
+		{
+			_putchar((c / 100) + '0');
+			_putchar((c / 10) % 10 + '0');
+			_putchar((c % 10) + '0');
+		}
+		else
+			_putchar((c % 10) + '0');
+
+		}
 		}
 		_putchar('\n');
 	}
