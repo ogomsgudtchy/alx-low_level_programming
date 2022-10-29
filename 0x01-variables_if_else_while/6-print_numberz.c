@@ -1,18 +1,19 @@
 #include <stdio.h>
+
 /**
-*	main - takes unspecificed number of arguments and returns value on
-*	 longer things about the main function
-* 	eturn: 0
-*/
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a new line, using putchar
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	int al;
-
-	fr (al = '0'; al <= '9'; al++)
+	int n;
+	/**/
+	for (n = 48; n < 58; n++)
 	{
-	putchar(al);
+		putchar(n);
 	}
-	
 	putchar('\n');
 	return (0);
 }

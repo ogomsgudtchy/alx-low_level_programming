@@ -1,9 +1,10 @@
 #include<stdio.h>
 /**
- *	main - takes unspecificed number of arguments and returns value on
-*	a program that prints the lowercase alphabet in reverse followed by a new line
-* Return:: 0
-*/
+ * main - takes unspecificed number of arguments and returns value on
+ * prints the lowercase alphabet in reverse followed by a new line
+ * Return:: 0
+ */
+
 int main(void)
 {
 	int al;

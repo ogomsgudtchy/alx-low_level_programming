@@ -1,20 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - takes unspecificed number of arguments and returns value on
- * described as longer things about the main function
- * Return: 0
+ * main - prints the alphabet in lowercase,
+ * followed by a new line, except q and e
+ * Return: Always 0 (Sucess)
  */
 
-int main (void)
+int main(void)
 {
-	int al;
-
-	for (al = 'a'; al <= 'z'; al++)
-		if (al != 'e' && al != 'q')
+	char ch = 'a';
+	/**/
+	while (ch <= 'z')
 	{
-		putchar(ch);
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		ch++;
 	}
 	putchar('\n');
 	return (0);
 }
-					
